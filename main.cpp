@@ -1,6 +1,6 @@
 #include <iostream>
 int main(){
-//Leia a idade de uma pessoa e informe se ela é maior ou menor de idade.
+//1-Leia a idade de uma pessoa e informe se ela é maior ou menor de idade.
 /*
 	int idade = 0;
 	std::cout<<"Digite sua idade: ";
@@ -12,7 +12,7 @@ int main(){
 */
 
 
-//Escreva um programa que exiba uma contagem regressiva de 10 a 1 usando while.
+//2-Escreva um programa que exiba uma contagem regressiva de 10 a 1 usando while.
 /*
 	int num = 10;
 	while (num > 0){
@@ -21,7 +21,7 @@ int main(){
 */
 
 
-//Peça ao usuário números até que ele digite 0. Mostre a soma total.
+//3-Peça ao usuário números até que ele digite 0. Mostre a soma total.
 /*
 	int num = 1;
 	int soma = 0;
@@ -34,7 +34,7 @@ int main(){
 */
 
 
-//Solicite um número e mostre sua tabuada de 1 a 10.
+//4-Solicite um número e mostre sua tabuada de 1 a 10.
 /*
 	int num = 0;
 	int mult = 1;
@@ -46,7 +46,7 @@ int main(){
 */
 
 
-//Leia 10 números e mostre quantos deles são positivos.
+//5-Leia 10 números e mostre quantos deles são positivos.
 /*
 	int num = 0;
 	int cont = 1;
@@ -64,7 +64,7 @@ int main(){
 */
 
 
-//Leia as notas até que o usuário digite uma nota negativa. Exiba a média das notas válidas.
+//6-Leia as notas até que o usuário digite uma nota negativa. Exiba a média das notas válidas.
 /*
 	int nota = 0;
 	int soma = 0;
@@ -81,8 +81,49 @@ int main(){
 */
 
 
-//Mostre todos os pares de 1 a 50 usando um laço for.
-	
+//7-Mostre todos os pares de 1 a 50 usando um laço for.
+/*
+	for(int num = 0; num <= 50; num += 2){
+		std::cout<<num<<std::endl;
+	}
+*/
 
 
+//8-Crie um jogo simples: o programa define um número secreto entre 1 e 10 e o usuário deve adivinhar. Dê dicas se o número é maior ou menor.
+/*
+	#include <cstdlib> 
+	#include <ctime>   
+	srand(time(0));
+
+    int numeroSecreto = (rand() % 10) + 1;
+    int palpite;
+
+    while (palpite != numeroSecreto) {                                                                                                              
+        std::cout << "Digite seu palpite: ";
+        std::cin >> palpite;
+
+        // Verifica se o palpite está correto
+        if (palpite == numeroSecreto) {
+            std::cout << "Voce acertou o numero secreto " << numeroSecreto <<std::endl;
+        } else if (palpite < numeroSecreto) {
+            std::cout << "O numero secreto e maior!"<<std::endl;
+        } else {
+            std::cout << "O numero secreto e menor!"<<std::endl;
+        }
+    }
+*/
+
+//9-Calcule a soma de todos os números ímpares entre 1 e 100.
+
+/*
+	int num = 0;
+	int cont = 0;
+	while(num <= 100){
+		if (num % 2 != 0){
+			cont = cont + num;
+		}
+	num++;
+	}
+	std::cout<< "Soma de todos os números ímpares entre 1 e 100: "<<cont;
+*/
 }
